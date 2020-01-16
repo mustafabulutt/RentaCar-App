@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{969CB2D8-784D-4B5E-BDDC-BBDA3FBBAE92}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>frmRent_aCar</RootNamespace>
+    <AssemblyName>frmRent-aCar</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v17.1.Drawing, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPdfViewer.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAnaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnaForm.Designer.cs">
+      <DependentUpon>frmAnaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAracKiralama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAracKiralama.Designer.cs">
+      <DependentUpon>frmAracKiralama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAracListe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAracListe.Designer.cs">
+      <DependentUpon>frmAracListe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAracListeDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAracListeDetay.Designer.cs">
+      <DependentUpon>frmAracListeDetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBakimKM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBakimKM.Designer.cs">
+      <DependentUpon>frmBakimKM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBakimKMDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBakimKMDetay.Designer.cs">
+      <DependentUpon>frmBakimKMDetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKaskoTakip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKaskoTakip.Designer.cs">
+      <DependentUpon>frmKaskoTakip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKaskoTakipDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKaskoTakipDetay.Designer.cs">
+      <DependentUpon>frmKaskoTakipDetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKullaniciGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKullaniciGiris.Designer.cs">
+      <DependentUpon>frmKullaniciGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMailGonder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMailGonder.Designer.cs">
+      <DependentUpon>frmMailGonder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMusteriler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMusteriler.Designer.cs">
+      <DependentUpon>frmMusteriler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMusterilerDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMusterilerDetay.Designer.cs">
+      <DependentUpon>frmMusterilerDetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSigortaTakip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSigortaTakip.Designer.cs">
+      <DependentUpon>frmSigortaTakip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSigortaTakipDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSigortaTakipDetay.Designer.cs">
+      <DependentUpon>frmSigortaTakipDetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSozlesme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSozlesme.Designer.cs">
+      <DependentUpon>frmSozlesme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="_Rent_aCarDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_Rent_aCarDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_Rent_aCarDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_Rent_aCarDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_Rent_aCarDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_Rent_aCarDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_Rent_aCarDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_Rent_aCarDataSet3.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmAnaForm.resx">
+      <DependentUpon>frmAnaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAracKiralama.resx">
+      <DependentUpon>frmAracKiralama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAracListe.resx">
+      <DependentUpon>frmAracListe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAracListeDetay.resx">
+      <DependentUpon>frmAracListeDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBakimKM.resx">
+      <DependentUpon>frmBakimKM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBakimKMDetay.resx">
+      <DependentUpon>frmBakimKMDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKaskoTakip.resx">
+      <DependentUpon>frmKaskoTakip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKaskoTakipDetay.resx">
+      <DependentUpon>frmKaskoTakipDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKullaniciGiris.resx">
+      <DependentUpon>frmKullaniciGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMailGonder.resx">
+      <DependentUpon>frmMailGonder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMusteriler.resx">
+      <DependentUpon>frmMusteriler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMusterilerDetay.resx">
+      <DependentUpon>frmMusterilerDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSigortaTakip.resx">
+      <DependentUpon>frmSigortaTakip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSigortaTakipDetay.resx">
+      <DependentUpon>frmSigortaTakipDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSozlesme.resx">
+      <DependentUpon>frmSozlesme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="_Rent_aCarDataSet.xsc">
+      <DependentUpon>_Rent_aCarDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_Rent_aCarDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_Rent_aCarDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_Rent_aCarDataSet.xss">
+      <DependentUpon>_Rent_aCarDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_Rent_aCarDataSet1.xsc">
+      <DependentUpon>_Rent_aCarDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="_Rent_aCarDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_Rent_aCarDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_Rent_aCarDataSet1.xss">
+      <DependentUpon>_Rent_aCarDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="_Rent_aCarDataSet2.xsc">
+      <DependentUpon>_Rent_aCarDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="_Rent_aCarDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_Rent_aCarDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_Rent_aCarDataSet2.xss">
+      <DependentUpon>_Rent_aCarDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="_Rent_aCarDataSet3.xsc">
+      <DependentUpon>_Rent_aCarDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="_Rent_aCarDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_Rent_aCarDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_Rent_aCarDataSet3.xss">
+      <DependentUpon>_Rent_aCarDataSet3.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\havalimani-rent-a-car.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\door-login-icon--1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2146980652.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

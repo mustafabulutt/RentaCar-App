@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="_Rent_aCarDataSet2" targetNamespace="http://tempuri.org/_Rent_aCarDataSet2.xsd" xmlns:mstns="http://tempuri.org/_Rent_aCarDataSet2.xsd" xmlns="http://tempuri.org/_Rent_aCarDataSet2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="DbConStr" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DbConStr (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.frmRent_aCar.Properties.Settings.GlobalReference.Default.DbConStr" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="AracTableAdapter" GeneratorDataComponentClassName="AracTableAdapter" Name="Arac" UserDataComponentName="AracTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DbConStr (Settings)" DbObjectName="[Rent-aCar].dbo.Arac" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT YakıtTuru FROM dbo.Arac</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="YakıtTuru" DataSetColumn="YakıtTuru" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="_Rent_aCarDataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="_Rent_aCarDataSet2" msprop:Generator_UserDSName="_Rent_aCarDataSet2">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Arac" msprop:Generator_TableClassName="AracDataTable" msprop:Generator_TableVarName="tableArac" msprop:Generator_TablePropName="Arac" msprop:Generator_RowDeletingName="AracRowDeleting" msprop:Generator_RowChangingName="AracRowChanging" msprop:Generator_RowEvHandlerName="AracRowChangeEventHandler" msprop:Generator_RowDeletedName="AracRowDeleted" msprop:Generator_UserTableName="Arac" msprop:Generator_RowChangedName="AracRowChanged" msprop:Generator_RowEvArgName="AracRowChangeEvent" msprop:Generator_RowClassName="AracRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="YakıtTuru" msprop:Generator_ColumnVarNameInTable="columnYakıtTuru" msprop:Generator_ColumnPropNameInRow="YakıtTuru" msprop:Generator_ColumnPropNameInTable="YakıtTuruColumn" msprop:Generator_UserColumnName="YakıtTuru" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
